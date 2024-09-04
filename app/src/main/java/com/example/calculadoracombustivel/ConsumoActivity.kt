@@ -8,20 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class ConsumoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_consumo)
 
-        val btnStart = findViewById<Button>(R.id.btn_start)
+
+        val btnStart = findViewById<Button>(R.id.btn_next2)
 
         btnStart.setOnClickListener {
 
-            val intent = Intent(this, PrecoActivity::class.java)
+            val intent = Intent(this, DistanciaActivity::class.java)
             startActivity(intent)
 
         }
-
     }
 }
