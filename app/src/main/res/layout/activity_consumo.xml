@@ -17,9 +17,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_consumption">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtconsumption"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: 10 KM/L" />
+            android:hint="Ex: 15" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
