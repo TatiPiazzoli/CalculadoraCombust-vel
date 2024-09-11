@@ -26,23 +26,27 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Calculadora de gasto de combustível"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        android:textSize="32sp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desc"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/desc1"
-        android:layout_width="match_parent"
+        android:id="@+id/desc"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="Quer saber quanto combustível vai gastar na sua viagem? É simples, clique no botão iniciar e descubra!"
         android:textSize="16sp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
