@@ -19,6 +19,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtconsumption"
             android:inputType="number"
+            android:maxLength="4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex: 15" />
