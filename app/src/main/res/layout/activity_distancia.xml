@@ -7,30 +7,49 @@
     android:layout_height="match_parent"
     tools:context=".DistanciaActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/tv_distance">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/distance">
+    </RelativeLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edtdistance"
-        android:inputType="number"
+
+    <ImageView
+        android:id="@+id/btn_voltar2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/voltar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ex: 100" />
-</com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtdistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 100"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:textSize="20sp"
         android:text="Qual a distância até seu destino?"
+        android:textColor="@color/sub_title"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_calculate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,8 +58,11 @@
         android:id="@+id/btn_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/title"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

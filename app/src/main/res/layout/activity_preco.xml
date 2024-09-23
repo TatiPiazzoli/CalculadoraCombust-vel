@@ -7,13 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".PrecoActivity">
 
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/price">
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_voltar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/voltar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btn_next1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:textSize="16sp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/title"
         android:text="Próxima"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textColor="@color/sub_title"
         android:text="Qual o preço do combustível?"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_next1"
@@ -35,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_price">

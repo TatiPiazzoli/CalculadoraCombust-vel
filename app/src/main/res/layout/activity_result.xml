@@ -7,13 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img5">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_voltarresult"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/voltar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:text="O valor total é:"
+        android:textColor="@color/title"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +45,8 @@
         android:gravity="center"
         android:maxLength="5"
         android:text="TextView"
-        android:textSize="32sp"
+        android:textColor="@color/title"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_total" />
@@ -36,24 +55,26 @@
         android:id="@+id/tv_fuelprice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
         android:layout_marginStart="16dp"
         android:text="Preço do combustível:"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:layout_marginTop="450dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_resultprice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_fuelprice" />
@@ -62,10 +83,11 @@
         android:id="@+id/tv_fueldistance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Distância até o destino:"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultprice" />
@@ -74,10 +96,11 @@
         android:id="@+id/tv_resultdistance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_fueldistance" />
@@ -86,10 +109,11 @@
         android:id="@+id/tv_fuelconsumption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Consumo do carro:"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_resultdistance" />
@@ -98,10 +122,11 @@
         android:id="@+id/tv_resultconsumption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textColor="@color/sub_title"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_fuelconsumption" />
@@ -113,7 +138,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/title"
         android:text="Fazer outro cálculo"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -3,6 +3,8 @@ package com.example.calculadoracombustivel
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,8 +18,12 @@ class PrecoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_preco)
 
         val price = findViewById<TextInputEditText>(R.id.edtprice)
-
         val btnStart = findViewById<Button>(R.id.btn_next1)
+        val btnVoltar = findViewById<ImageView>(R.id.btn_voltar)
+
+        btnVoltar.setOnClickListener {
+            finish()
+        }
 
         btnStart.setOnClickListener {
 
