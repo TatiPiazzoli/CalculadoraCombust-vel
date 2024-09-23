@@ -3,6 +3,7 @@ package com.example.calculadoracombustivel
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +20,11 @@ class DistanciaActivity : AppCompatActivity() {
         val pricefuel = intent.getFloatExtra("Key_price", 0f)
         val consumptionfuel = intent.getFloatExtra("Key_consumption", 0f)
         val distance = findViewById<TextInputEditText>(R.id.edtdistance)
+        val btnVoltar2 = findViewById<ImageView>(R.id.btn_voltar2)
+
+        btnVoltar2.setOnClickListener {
+            finish()
+        }
 
         btnStart.setOnClickListener {
 
